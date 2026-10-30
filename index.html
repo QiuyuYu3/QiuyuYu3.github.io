@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qiuyu Yu</title>
+<meta name="description" content="Qiuyu Yu, Ph.D. student at Auburn University: open-source tools for neuroimaging and research methods.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<aside>
+  <h1 class="name">Qiuyu Yu</h1>
+  <p class="role">Ph.D. student in Human Development and Family Science, Auburn University</p>
+  <p class="lab"><a href="https://au-connect-lab.github.io/CONNECT-lab/">CONNECT Lab</a><br>Advisor: Tianying Cai</p>
+  <ul class="tags">
+    <li class="neuro">fMRI</li>
+    <li class="neuro">fNIRS</li>
+    <li class="stats">statistical methods</li>
+    <li class="soft">research software</li>
+  </ul>
+  <p class="bio">My research interests include computational neuroimaging, statistics, and methodology, with a secondary interest in astrophysics. I previously worked as a student therapist and bring three years of clinical experience to my research.</p>
+  <ul class="side-links">
+    <li><a href="https://github.com/QiuyuYu3">GitHub</a></li>
+    <li><a href="https://orcid.org/0009-0003-5242-6302">ORCID</a></li>
+    <li><a href="https://www.linkedin.com/in/qiuyu-y-2395601b8/">LinkedIn</a></li>
+    <li><a href="mailto:qiuyuyu.psych@gmail.com">qiuyuyu.psych@gmail.com</a></li>
+  </ul>
+  <nav class="side-nav">
+    <a href="#software">Software</a>
+    <a class="sub" href="#neuroimaging">Neuroimaging</a>
+    <a class="sub" href="#research-data">Research data and workflow</a>
+    <a href="#teaching">Teaching and writing</a>
+  </nav>
+</aside>
+
+<main>
+
+<section id="software">
+  <h2>Software</h2>
+
+  <div class="group">
+  <h3 class="group-title" id="neuroimaging">Neuroimaging</h3>
+
+  <article class="item">
+    <figure class="thumb"><img src="img/nirspipe.jpg" alt="NIRSPipe postprocessing outputs: task GLM, denoising, and resting-state connectivity"></figure>
+    <div>
+      <h4>NIRSPipe</h4>
+      <p>A BIDS-compatible pipeline for fNIRS preprocessing, postprocessing, hyperscanning, and quality control. Each run gets an HTML QC report with a provenance graph and a generated Methods paragraph. In active development.</p>
+      <p class="links"><a href="https://github.com/AU-CONNECT-Lab/NIRSPipe">Code</a> · <a href="https://au-connect-lab.github.io/NIRSPipe/">Documentation</a></p>
+    </div>
+  </article>
+
+  <article class="item">
+    <figure class="thumb"><img src="img/neuromaestro.jpg" alt="NeuroMaestro logo"></figure>
+    <div>
+      <h4>NeuroMaestro</h4>
+      <p>A modular neuroimaging preprocessing meta-pipeline for HPC clusters, with a GUI and a CLI. Data preparation, AFNI or BIDS-app pipelines (fMRIPrep, XCP-D, QSIPrep), and MRIQC run on SLURM and are configured through YAML files.</p>
+      <p class="links"><a href="https://github.com/GeorgiaCenterforDevelopmentalScience/NeuroMaestro">Code</a> · <a href="https://georgiacenterfordevelopmentalscience.github.io/NeuroMaestro/">Documentation</a> · <a href="https://pypi.org/project/neuromaestro/">PyPI</a></p>
+    </div>
+  </article>
+
+  <article class="item">
+    <figure class="thumb contain"><img src="img/qctoolkit.png" alt="fMRI-QCtoolkit workflow: processing, rating, data preparation, visualizing"></figure>
+    <div>
+      <h4>fMRI-QCtoolkit</h4>
+      <p>fMRI quality control that combines quantitative metrics from MRIQC, fMRIPrep, and AFNI with manual ratings, plus an interactive dashboard for filtering and reviewing a whole dataset.</p>
+      <p class="links"><a href="https://github.com/QiuyuYu3/fMRI-QCtoolkit">Code</a> · <a href="https://pypi.org/project/fmri-qctoolkit/">PyPI</a></p>
+    </div>
+  </article>
+
+  <article class="item">
+    <figure class="thumb contain"><img src="img/conngraph.jpg" alt="A brain network on the brain and as a bundled circos plot"></figure>
+    <div>
+      <h4>ConnGraph</h4>
+      <p>Graph-theory metrics, group comparisons, and network-based statistics for brain connectivity from fMRI, fNIRS, EEG, and MEG, with HTML reports and 3-D brain figures.</p>
+      <p class="links">Repository not yet public</p>
+    </div>
+  </article>
+  </div>
+
+  <div class="group">
+  <h3 class="group-title" id="research-data">Research data and workflow</h3>
+
+  <article class="item">
+    <figure class="thumb"><img src="img/ailr.png" alt="AILR pipeline: project setup, import, deduplication, and screening"></figure>
+    <div>
+      <h4>AILR</h4>
+      <p>A desktop app for systematic and scoping literature reviews with an AI as a second reviewer, from import and deduplication through screening and data extraction, with a PRISMA-auditable trail.</p>
+      <p class="links"><a href="https://github.com/QiuyuYu3/AILR-AI-assisted-literature-review-pipeline">Code</a> · <a href="https://qiuyuyu3.github.io/AILR-AI-assisted-literature-review-pipeline/">Documentation</a></p>
+    </div>
+  </article>
+
+  <article class="item">
+    <figure class="thumb"><img src="img/labcatalog.png" alt="labcatalog Overview page for an example study, with counts of instruments, datasets, and errors"></figure>
+    <div>
+      <h4>labcatalog</h4>
+      <p>A browsable catalog of a lab's study data. Describe instruments, studies, and data files once, then browse every instrument and variable across waves, see where the data disagree with the metadata, and run common analyses in R or Python with tables and text ready for a manuscript.</p>
+      <p class="links"><a href="https://github.com/AU-CONNECT-Lab/labcatalog">Code</a> · <a href="https://au-connect-lab.github.io/labcatalog/">Documentation</a></p>
+    </div>
+  </article>
+
+  <article class="item">
+    <figure class="thumb"><img src="img/macaw.png" alt="MACAW workflow: recordings, preparation, feature extraction, machine and human coding"></figure>
+    <div>
+      <h4>MACAW</h4>
+      <p>The Multimodal Automated Coding and Analysis Workbench turns recordings of natural two-person or group interactions into an analyzable multimodal feature time series: alignment across sources, features from voice, speech, pose, face, and motion, quality control, rule-based and LLM-assisted behavioral coding, and two-way exchange with ELAN. Pre-alpha.</p>
+      <p class="links"><a href="https://github.com/AU-CONNECT-Lab/Multimodal-Automated-Coding-and-Analysis-Workbench">Code</a></p>
+    </div>
+  </article>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>Teaching and writing</h2>
+
+  <article class="entry">
+    <h3><a href="https://qiuyuyu3.github.io/Applied-Psychological-Statistics-and-Data-Analysis-in-R_and_Python/">Applied Psychological Statistics and Data Analysis in R and Python</a></h3>
+    <p>An applied statistics manual for students in psychology and related fields who analyze their own research data in R. For each method it covers when to use it, which packages and functions to use, and common mistakes, with example code on one simulated dataset, from data cleaning to structural equation modeling with lavaan. Chapters are being added.</p>
+  </article>
+
+  <article class="entry">
+    <h3><a href="https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/">fMRI Data Processing Manual on HPC</a></h3>
+    <p>A step-by-step handbook for processing fMRI data on an HPC cluster with AFNI, fMRIPrep, and XCP-D, from DICOM conversion through quality control and group analysis.</p>
+  </article>
+
+  <article class="entry">
+    <h3><a href="https://github.com/QiuyuYu3/FMRI-Workshop">fMRI Workshop</a></h3>
+    <p>A ten-session, hands-on workshop that takes complete beginners from raw MRI data to a reproducible fMRI analysis on an HPC cluster.</p>
+  </article>
+
+  <article class="entry">
+    <h3><a href="https://github.com/QiuyuYu3/Psychology-Statistics-Workshop">Psychology Statistics Workshop</a></h3>
+    <p>Slides for a statistics workshop for psychology students. In progress.</p>
+  </article>
+
+  <article class="entry">
+    <h3><a href="https://github.com/QiuyuYu3/Deal_with_the_fear_and_anxiety_of_using_English_to_do_clinical_work">Using English in Clinical Work as a Non-native Speaker</a></h3>
+    <p>Strategies for novice counselors, therapists, and social workers who do clinical work in English as a second language, especially international students. In English and Chinese.</p>
+  </article>
+</section>
+
+<footer>© 2026 Qiuyu Yu</footer>
+
+</main>
+</div>
+</body>
+</html>
